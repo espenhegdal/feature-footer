@@ -3,25 +3,13 @@ import React from 'react'
 import { roboto } from 'styles/fonts'
 import Hamburger from 'hamburger-react'
 
-
 import '../../styles/globals.css'
 
 const navigation = {
-  medlemmer: [
-    { name: 'underside', href: '#' },
-    
-  ],
-  programmet: [
-    { name: 'underside', href: '#' },
-    
-  ],
-  sissel: [
-    { name: 'underside', href: '#' },
-    
-  ],
-  annet: [
-    
-  ],
+  medlemmer: [{ name: 'underside', href: '#' }],
+  programmet: [{ name: 'underside', href: '#' }],
+  sissel: [{ name: 'underside', href: '#' }],
+  annet: [],
   social: [
     {
       name: 'Facebook',
@@ -49,7 +37,6 @@ const navigation = {
         </svg>
       ),
     },
-    
 
     {
       name: 'Linkedin',
@@ -81,9 +68,7 @@ export default function footer() {
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
               alt="Company name"
             />
-            <p className="text-sm leading-6 text-gray-300">
-              tekst om Høyre i kort forstand
-            </p>
+            <p className="text-sm leading-6 text-gray-300">tekst om Høyre i kort forstand.</p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-400">
